@@ -1,0 +1,125 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    color: #fff;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 20px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    font-weight: 600;
+    color: whitesmoke;
+    position: relative;
+}
+.navbar{
+    position: relative;
+}
+.navbar a{
+    font-weight: 500;
+    font-size: 20px;
+    color: whitesmoke;
+    margin: 0px 30px;
+    text-transform: capitalize;
+    transition: .7s;
+}
+.navbar a:hover,.navbar a.active{
+    color:aqua;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background:url(/images/minerd-15k.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 50px 20px 0px;
+}
+.home-content{
+    max-width: 630px;
+}
+.home-content h1{
+    position: relative;
+    font-size: 45px;
+    line-height: 1.2;
+}
+.home-content h1:nth-child(3){
+    background: linear-gradient(#59ffff,#1952ab);
+    color: transparent;
+    -webkit-background-clip :text;
+}
+.home-content p{
+    position: relative;
+    font-size: 16px;
+    margin: 25px 0 30px;
+}
+.home-content .btn-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+}
+.btn{
+    padding: 10px 28px;
+    background: #42c1e8;
+    border: 2px solid #42c1e8;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #01003f;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.btn-box .btn:nth-child(2){
+    background: transparent;
+    color: #42c1e8;
+    transition: .5s;
+}
+.btn-box .btn:nth-child(2):hover{
+    background: #42c1e8;
+    color: #01003f;
+}
+.btn.sign-up{
+    position: relative;
+    border: none;
+}
+.animate{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#01003f;
+    animation: show-right 1s ease-out forwards;
+    animation-delay: calc(.3s * var(--i));
+}
+.animate.bg{
+    animation: fade-in 1s ease-out forwards;
+    animation-delay:3.2s;;
+}
+/*KEY FRAMES*/
+@keyframes show-right{
+    100%{
+        width: 0;
+    }
+}
+@keyframes fade-in{
+    100%{
+        opacity:0;
+    }
+}

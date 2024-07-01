@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+.vicky{
+    height: 300px;
+    width: 300px;
+    border: 2px solid;
+    margin: 100px auto;
+    background-color: blueviolet;
+}
+.header{
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    margin-top: 30px;
+
+}
+.length{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+button{
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: pink;
+
+}
+#result{
+    color: whitesmoke;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 50px;
+    position:static;
+}

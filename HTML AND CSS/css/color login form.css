@@ -1,0 +1,154 @@
+*{
+    top: 0;
+    left: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background:linear-gradient(to right,#3f5efb,#fc466b);
+   
+}
+form{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+    background:rgba(225,225,225,0.06);
+    box-shadow: 0px 8px 32px 0px rgba(31,38,135,0.37);
+    border-radius: 20px;
+    border-left: 1px solid rgb(225,225,225,0.3);
+    border-top: 1px solid rgb(225,225,225,0.3);
+    position: relative;
+    transition: 3s;
+   
+}
+
+form::before{
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 350px;
+    background-color: #fc466b;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.5;
+}
+form::after{
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: 350px;
+    background-color: #fc466b;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.5;
+}
+h1{
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    user-select: none;
+}
+.input-box{
+    margin: 10px 10px;
+    height: 20px;
+    width:300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+
+}
+
+.input-box1{
+    margin: 10px 10px;
+    height: 20px;
+    width:300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+
+}
+.input-box input{
+    height: 20px;
+    width: 200px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 135px;
+    left: 120px;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid rgb(225,225,225,0.3);
+}
+.input-box1 input{
+    height: 20px;
+    width: 200px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 200px;
+    left: 120px;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid rgb(225,225,225,0.3);
+}
+
+button{
+    cursor: pointer;
+    margin-top: 50px;
+    height: 30px;
+    width: 50%;
+    margin-left: 110px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: whitesmoke;
+    box-shadow: 4px 4px 4px 4px rgba(31,38,135,0.37);
+    transition: 1s;
+
+}
+
+button:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: cornsilk;
+    box-shadow: 4px 4px 4px 4px rgba(31,38,135,0.37);
+}
+p{
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 40px;
+    text-transform: capitalize;
+}
+p a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+p a:hover{
+    color: whitesmoke;
+    text-decoration: underline;
+    transition: 1s;
+}
